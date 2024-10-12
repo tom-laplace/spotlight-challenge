@@ -1,4 +1,4 @@
-import { SpotifyArtist } from '../types/spotify_api/spotify_artist.js'
+import { SpotifyArtist } from '../../types/spotify_api/spotify_artist.js'
 import { MusicProvider } from './music_provider_factory.js'
 import axios from 'axios'
 

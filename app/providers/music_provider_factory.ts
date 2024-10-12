@@ -1,4 +1,4 @@
-import { SpotifyArtist } from '../types/spotify_api/spotify_artist.js'
+import { SpotifyArtist } from '../../types/spotify_api/spotify_artist.js'
 import { SpotifyProvider } from './spotify_provider.js'
 
 export interface MusicProvider {
