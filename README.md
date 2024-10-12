@@ -1,9 +1,9 @@
 # Spotlight Challenge (WIP)
 
-## Introduction 
+## Introduction
 
 - AdonisJS
-- React 
+- React
 - InertiaJS
 - Vite
 - BentoCache

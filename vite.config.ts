@@ -8,7 +8,10 @@ export default defineConfig({
   plugins: [
     inertia({ ssr: { enabled: false } }),
     react(),
-    adonisjs({ entrypoints: ['inertia/app/app.tsx'], reload: ['resources/views/**/*.edge'] }),
+    adonisjs({
+      entrypoints: ['inertia/app/app.tsx'],
+      reload: ['resources/views/**/*.edge'],
+    }),
   ],
 
   /**

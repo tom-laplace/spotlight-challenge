@@ -10,7 +10,7 @@ export default function Home() {
       <div className="pt-4 h-full flex flex-col">
         {/* Header */}
         <div className="grow pb-4 bg-gradient-to-b from-sand-1 to-sand-2 flex justify-center items-center">
-          <a href="https://adonisjs.com" target="_blank" className="isolate">
+          <a href="https://adonisjs.com" target="_blank" className="isolate" rel="noreferrer">
             <svg className="w-16 h-16 fill-primary" viewBox="0 0 33 33">
               <path
                 fillRule="evenodd"
@@ -76,7 +76,7 @@ export default function Home() {
 
               <div className="space-y-1">
                 <h2 className="text-lg font-semibold">
-                  <a href="https://docs.adonisjs.com" target="_blank">
+                  <a href="https://docs.adonisjs.com" target="_blank" rel="noreferrer">
                     <span>Documentation</span>
                     <span className="absolute inset-0"></span>
                   </a>
@@ -104,7 +104,7 @@ export default function Home() {
 
             <div className="space-y-1">
               <h2 className="text-lg font-semibold">
-                <a href="https://adocasts.com" target="_blank">
+                <a href="https://adocasts.com" target="_blank" rel="noreferrer">
                   <span>Adocasts</span>
                   <span className="absolute inset-0"></span>
                 </a>
@@ -129,7 +129,7 @@ export default function Home() {
 
             <div className="space-y-1">
               <h2 className="text-lg font-semibold">
-                <a href="https://packages.adonisjs.com" target="_blank">
+                <a href="https://packages.adonisjs.com" target="_blank" rel="noreferrer">
                   <span>Packages</span>
                   <span className="absolute inset-0"></span>
                 </a>
@@ -154,7 +154,7 @@ export default function Home() {
 
             <div className="space-y-1">
               <h2 className="text-lg font-semibold">
-                <a href="https://discord.gg/vDcEjq6" target="_blank">
+                <a href="https://discord.gg/vDcEjq6" target="_blank" rel="noreferrer">
                   <span>Discord</span>
                   <span className="absolute inset-0"></span>
                 </a>
@@ -177,6 +177,7 @@ export default function Home() {
                   href="https://lucid.adonisjs.com"
                   target="_blank"
                   className="flex flex-row gap-2"
+                  rel="noreferrer"
                 >
                   <span className="bg-[#D5EAE7] h-6 w-6 flex justify-center items-center rounded">
                     <svg className="h-4 w-4 fill-[#0E766E]" viewBox="0 0 24 24">
@@ -220,7 +221,12 @@ export default function Home() {
 
             <article className="relative py-4 px-5 bg-white border border-transparent rounded-lg hover:border-sand-8 hover:shadow-sm transition duration-100 ease-in-out group">
               <h2 className="font-semibold text-sand-12">
-                <a href="https://vinejs.dev/" target="_blank" className="flex flex-row gap-2">
+                <a
+                  href="https://vinejs.dev/"
+                  target="_blank"
+                  className="flex flex-row gap-2"
+                  rel="noreferrer"
+                >
                   <span className="bg-[#F3DBFC] h-6 w-6 flex justify-center items-center rounded">
                     <svg className="h-4 w-4 fill-[#CA5AF2]" viewBox="0 0 24 24">
                       <path
@@ -260,7 +266,12 @@ export default function Home() {
 
             <article className="relative py-4 px-5 bg-white border border-transparent rounded-lg hover:border-sand-8 hover:shadow-sm transition duration-100 ease-in-out group">
               <h2 className="font-semibold text-sand-12">
-                <a href="https://inertiajs.com/" target="_blank" className="flex flex-row gap-2">
+                <a
+                  href="https://inertiajs.com/"
+                  target="_blank"
+                  className="flex flex-row gap-2"
+                  rel="noreferrer"
+                >
                   <span className="bg-[#B8EAE0] h-6 w-6 flex justify-center items-center rounded">
                     <svg className="h-4 w-4 fill-[#4BBBA5]" viewBox="0 0 24 24">
                       <path
@@ -300,7 +311,12 @@ export default function Home() {
 
             <article className="relative py-4 px-5 bg-white border border-transparent rounded-lg hover:border-sand-8 hover:shadow-sm transition duration-100 ease-in-out group">
               <h2 className="font-semibold text-sand-12">
-                <a href="https://japa.dev" target="_blank" className="flex flex-row gap-2">
+                <a
+                  href="https://japa.dev"
+                  target="_blank"
+                  className="flex flex-row gap-2"
+                  rel="noreferrer"
+                >
                   <span className="bg-[#FACDDC] h-6 w-6 flex justify-center items-center rounded">
                     <svg className="h-4 w-4 fill-[#DD3074]" viewBox="0 0 256 256">
                       <path
