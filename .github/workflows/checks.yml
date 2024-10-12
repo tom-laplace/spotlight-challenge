@@ -1,0 +1,37 @@
+name: Checks 
+
+on: 
+  workflow_call: 
+  workflow_dispatch:
+  pull_request:
+    branches:
+      - main
+
+jobs: 
+  lint: 
+    runs-on: ubuntu-latest 
+    stesps: 
+      - uses: actions/checkout@v4 
+      - name: Setup Node.js 
+        uses: actions/setup-node@v3
+        with: 
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install
+      - name: Lint
+        run: npm run lint
+
+  check: 
+    runs-on: ubuntu-latest 
+    steps: 
+      - uses: actions/checkout@v4 
+      - name: Setup Node.js 
+        uses: actions/setup-node@v3
+        with: 
+          node-version: '20'
+      - name: Install dependencies
+        run: npm install
+      - name: Format & Typecheck
+        run: npm run check
+
+  #### TODO : add test job ####

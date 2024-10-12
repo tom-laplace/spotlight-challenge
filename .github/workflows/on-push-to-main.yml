@@ -1,0 +1,15 @@
+name: Main 
+
+on: 
+  push:
+    branches:
+      - main
+  workflow_dispatch: 
+
+jobs: 
+  checks: 
+    names: Checks 
+    uses: ./.github/workflows/checks.yml
+
+
+    #### TODO : Add deployment ####
