@@ -34,7 +34,7 @@ jobs:
       - name: Format & Typecheck
         run: npm run typecheck:adonis
 
-  tests: 
+  tests:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
