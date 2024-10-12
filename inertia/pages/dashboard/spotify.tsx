@@ -5,7 +5,7 @@ export default function SpotifyDashboard(props: InferPageProps<AuthController, '
   return (
     <div>
       <h1>Spotify Dashboard</h1>
-      <p>Welcome, {props.user.display_name}</p>
+      <p>Welcome, {props.user.nickName}</p>
     </div>
   )
 }

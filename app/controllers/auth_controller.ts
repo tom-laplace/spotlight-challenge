@@ -1,9 +1,9 @@
 import type { HttpContext } from '@adonisjs/core/http'
 
 export default class AuthController {
-  async redirect({ ally, params }: HttpContext) {
-    const driverInstance = ally.use(params.driver)
-    driverInstance.redirect((request: { scopes: (arg0: string[]) => void }) => {
+  async redirect({ ally }: HttpContext) {
+    const driverInstance = ally.use('spotify')
+    driverInstance.redirect((request) => {
       request.scopes(['user-top-read'])
     })
   }
