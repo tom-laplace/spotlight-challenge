@@ -1,6 +1,6 @@
 import { test } from '@japa/runner'
 import nock from 'nock'
-import { SpotifyProvider } from '../../../app/providers/spotify_provider.js'
+import { SpotifyProvider } from '../../../app/services/spotify_provider.js'
 
 test.group('SpotifyProvider', (group) => {
   function mockSpotifyApiSuccess() {

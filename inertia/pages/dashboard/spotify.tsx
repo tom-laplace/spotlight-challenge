@@ -4,8 +4,19 @@ import { InferPageProps } from '@adonisjs/inertia/types'
 export default function SpotifyDashboard(props: InferPageProps<AuthController, 'spotifyCallback'>) {
   return (
     <div>
-      <h1>Spotify Dashboard</h1>
-      <p>Welcome, {props.user.nickName}</p>
+      <div>
+        <h1>Spotify Dashboard</h1>
+        <p>Welcome, {props.user.nickName}</p>
+      </div>
+
+      <div>
+        <h2>Top Artists</h2>
+        <ul>
+          {props.topArtists.map((artist: any) => (
+            <li key={artist.id}>{artist.name}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   )
 }

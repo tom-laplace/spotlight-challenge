@@ -9,10 +9,10 @@ export enum MusicService {
   SPOTIFY = 'spotify',
 }
 
-export class MusicProviderFactory {
-  private static providers: Map<MusicService, MusicProvider> = new Map()
+export default class MusicProviderFactory {
+  private providers: Map<MusicService, MusicProvider> = new Map()
 
-  static getProvider(service: MusicService, authToken: string): MusicProvider {
+  getProvider(service: MusicService, authToken: string): MusicProvider {
     if (!this.providers.has(service)) {
       switch (service) {
         case MusicService.SPOTIFY:

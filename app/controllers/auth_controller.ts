@@ -1,6 +1,11 @@
+import MusicProvider, { MusicService } from '#services/music_provider_factory'
+import { inject } from '@adonisjs/core'
 import type { HttpContext } from '@adonisjs/core/http'
 
+@inject()
 export default class AuthController {
+  constructor(protected musicProvider: MusicProvider) {}
+
   async spotifyRedirect({ ally }: HttpContext) {
     const driverInstance = ally.use('spotify')
     driverInstance.redirect((request) => {
@@ -24,6 +29,11 @@ export default class AuthController {
     }
 
     const user = await spotify.user()
-    return inertia.render('dashboard/spotify', { user })
+    const spotifyProvider = this.musicProvider.getProvider(MusicService.SPOTIFY, user.token.token)
+    const topArtists = await spotifyProvider.getUserTopArtists(5)
+
+    console.log(topArtists)
+
+    return inertia.render('dashboard/spotify', { user, topArtists })
   }
 }
