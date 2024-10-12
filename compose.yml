@@ -1,10 +1,10 @@
-services: 
-  adonis-spotight-app: 
+services:
+  adonis-spotight-app:
     build: .
-    ports: 
-      - "8080:8080"
+    ports:
+      - '8080:8080'
     volumes:
-      - ./tmp:/app/tmp 
-    env_file: 
-      - .env.prod 
+      - ./tmp:/app/tmp
+    env_file:
+      - .env.prod
     restart: unless-stopped

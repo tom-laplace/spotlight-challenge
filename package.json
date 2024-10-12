@@ -14,7 +14,7 @@
     "typecheck:adonis": "tsc --noEmit -p tsconfig.json",
     "typecheck:react": "tsc --noEmit -p inertia/tsconfig.json",
     "typechecks": "npm run typecheck:adonis && npm run typecheck:react",
-    "check": "npm run lint && npm run typechecks"
+    "check": "npm run format && npm run typechecks"
   },
   "imports": {
     "#controllers/*": "./app/controllers/*.js",
