@@ -8,7 +8,7 @@ on:
 
 jobs: 
   checks: 
-    names: Checks 
+    name: Checks 
     uses: ./.github/workflows/checks.yml
 
 
