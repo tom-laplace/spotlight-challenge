@@ -1,7 +1,7 @@
 import type { HttpContext } from '@adonisjs/core/http'
 
 export default class AuthController {
-  async redirect({ ally }: HttpContext) {
+  async spotifyRedirect({ ally }: HttpContext) {
     const driverInstance = ally.use('spotify')
     driverInstance.redirect((request) => {
       request.scopes(['user-top-read'])
@@ -24,7 +24,6 @@ export default class AuthController {
     }
 
     const user = await spotify.user()
-    console.log(user)
     return inertia.render('dashboard/spotify', { user })
   }
 }
