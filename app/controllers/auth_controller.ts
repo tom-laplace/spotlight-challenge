@@ -34,6 +34,12 @@ export default class AuthController {
 
     console.log(topArtists)
 
-    return inertia.render('dashboard/spotify', { user, topArtists })
+    // TODO: make a user presenter for Inertia
+    const userPropsTest = {
+      id: user.id,
+      nickName: user.nickName.toString() as string,
+    }
+
+    return inertia.render('dashboard/spotify', { userPropsTest, topArtists })
   }
 }
